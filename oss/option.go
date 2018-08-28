@@ -172,6 +172,11 @@ func Origin(value string) Option {
 	return setHeader(HTTPHeaderOrigin, value)
 }
 
+// Callback is an option to set Callback header
+func Callback(value string) Option {
+	return setHeader(HTTPHeaderOssCallback, value)
+}
+
 // Delimiter is an option to set delimiler parameter
 func Delimiter(value string) Option {
 	return addParam("delimiter", value)
